@@ -4,8 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 import org.json.JSONObject;
-import steps.jsonTestIngredients.Ingredient;
-import steps.jsonTestIngredients.Recipe;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,7 +14,7 @@ import java.nio.file.Paths;
 
 public class JsonParser {
 
-    private final static String JSON = "src\\Andrei_Protasenia\\src\\test\\java\\resorces\\recipe.json";
+    private final static String JSON = "src\\Andrei_Protasenia_project\\src\\test\\java\\resorces\\recipe.json";
     File file = new File(JSON);
 
     public void parseJSON(FileReader fileReader) throws IOException {
