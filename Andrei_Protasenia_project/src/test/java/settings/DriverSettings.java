@@ -3,6 +3,7 @@ package settings;
 import org.openqa.selenium.WebDriver;
 
 public class DriverSettings {
+
     public static void setScreenMode(ScreenMode mode, WebDriver driver) {
         switch (mode) {
             case FULL_SCREEN:

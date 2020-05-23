@@ -41,7 +41,7 @@ public class BookingSteps {
         driver.get(url);
     }
 
-    public static void findElementKeys(WebDriver driver, String xPath, String keys) {
+    public static void findKeys(WebDriver driver, String xPath, String keys) {
         element = driver.findElement(By.xpath(xPath));
         element.sendKeys(keys);
     }

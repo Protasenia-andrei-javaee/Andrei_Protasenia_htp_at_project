@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Andrei_Protasenia_project" target="13" />
+      <module name="Andrei_Protasenia_project" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -13,14 +13,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
                 <configuration>
-                    <release>13</release>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
@@ -37,13 +36,13 @@
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chrome-driver</artifactId>
+            <artifactId>selenium-firefox-driver</artifactId>
             <version>3.141.59</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-firefox-driver</artifactId>
+            <artifactId>selenium-chrome-driver</artifactId>
             <version>3.141.59</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -86,10 +85,58 @@
             <version>29.0-jre</version>
         </dependency>
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-            <version>3.141.59</version>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20190722</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.12</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>4.3.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>4.3.0</version>
             <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>4.3.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/tag-expressions -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>tag-expressions</artifactId>
+            <version>1.1.1</version>
         </dependency>
     </dependencies>
 </project>
