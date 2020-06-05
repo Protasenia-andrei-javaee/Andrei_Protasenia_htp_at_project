@@ -2,12 +2,11 @@ package runners;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import tests.Booking2;
-import tests.Booking3;
-import tests.Booking1;
-
+import tests.booking.booking1.ParisTest;
+import tests.booking.booking2.MoskowTest;
+import tests.booking.booking3.OsloTest;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({Booking1.class, Booking2.class, Booking3.class})
+@Suite.SuiteClasses({ParisTest.class, MoskowTest.class, OsloTest.class})
 public class BookingRunner {
 }

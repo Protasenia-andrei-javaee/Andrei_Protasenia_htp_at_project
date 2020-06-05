@@ -2,11 +2,9 @@ package utills;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.google.gson.stream.JsonReader;
 import org.json.JSONObject;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,8 +12,8 @@ import java.nio.file.Paths;
 
 public class JsonParser {
 
-    private final static String JSON = "src\\Andrei_Protasenia_project\\src\\test\\java\\resorces\\recipe.json";
-    File file = new File(JSON);
+    private final static String JSON = "src\\Dmitry_Sankovsky_project\\src\\test\\java\\resources\\recipe.json";
+    private File file = new File(JSON);
 
     public void parseJSON(FileReader fileReader) throws IOException {
         String input = new String(Files.readAllBytes(Paths.get(JSON)));
@@ -23,21 +21,22 @@ public class JsonParser {
         System.out.println(obj.getString("preptime"));
     }
 
-    public void parseGson() throws FileNotFoundException {
+    public void parseGson() {
         Gson gson = new Gson();
-        Recipe recipe = gson.fromJson(new JsonReader(new FileReader(JSON)), Recipe.class);
-        System.out.println(recipe.recipename);
+        //Recipe recipe = gson.fromJson(new JsonReader(new FileReader(JSON)), Recipe.class);
+       // System.out.println(recipe.recipename);
     }
 
-   public void parseJackson() throws IOException {
+   public void parseJackson(){
         ObjectMapper mapper = new ObjectMapper();
-        Recipe recipe = mapper.readValue(file, Recipe.class);
-        System.out.println(recipe.recipename);
+       // Recipe recipe = mapper.readValue(file, Recipe.class);
+      //  System.out.println(recipe.recipename);
     }
 
-    public void fromGson() throws FileNotFoundException {
+    public void fromGson() {
         Gson gson = new Gson();
-        Recipe recipe = new Recipe("borsh", new Ingredient[]{}, 120);
-        System.out.println(gson.toJson(recipe));
+        //Recipe recipe = new Recipe("borsh", new Ingredient[]{}, 120);
+       // System.out.println(gson.toJson(recipe));
     }
+
 }
