@@ -6,11 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Andrei_Protasenia_project" />
+        <module name="Andrei_Protasenia_htp_at_project2" />
+        <module name="Andrei_Protasenia_htp_at_project" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Andrei_Protasenia_project" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
